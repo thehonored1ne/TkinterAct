@@ -5,11 +5,8 @@ root = tk.Tk()
 root.title("Student Information Form")
 root.geometry("300x400")
 
-try:
-    p1 = tk.PhotoImage(file='student.png')
-    root.iconphoto(False, p1)
-except tk.TclError:
-    print("Warning: 'student.png' not found. Default icon will be used.")
+p1 = tk.PhotoImage(file='student.png')
+root.iconphoto(False, p1)
 
 v = tk.IntVar()
 
